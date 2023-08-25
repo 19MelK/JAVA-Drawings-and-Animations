@@ -1,0 +1,128 @@
+background(89, 216, 255);
+
+var drawGrass= function(){
+    
+    var grassWidth = random(10, 25);
+    var grassHeight= random(150, 400);
+    var grassLocation= random(20,400);
+    
+    stroke(random(93,10), random (237, 41),random(83, 7));
+    strokeWeight(grassWidth);
+    line(grassLocation, 400, grassLocation, grassHeight);
+    
+    };
+    
+
+    
+
+var drawBubbles=function(){
+ noStroke();
+ fill(random(130,19), random(190, 102), random(200, 237));
+  var Xpos=random(10, 100);
+  var Ypos=random(10, 400);
+  var bubbleSize=random(5, 50);
+ ellipse(Xpos, Ypos, bubbleSize, bubbleSize);  
+ 
+
+    };
+    
+var drawRocks=function(){
+ 
+ noStroke();
+ fill(49, 51, 54);
+ ellipse(350, 400, 350, 150);   
+};
+
+
+var drawFish = function () {
+var centerX = random (10, 300);
+var centerY = random (10, 300);
+var bodyLength = random(50, 100);
+var bodyHeight = random(20, 70);
+var bodyColor = color(random (162, 120), random( 100, 100), random(210,255));
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/2;
+var tailHeight = bodyHeight/3;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+         
+};
+
+
+    var drawFish2 = function (){
+var centerX = random (10, 300);
+var centerY = random (150, 350);
+var bodyLength = random(80, 180);
+var bodyHeight = random(60, 100);
+var bodyColor = color(random (275, 245), random(30,98), random(0, 0));
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/2;
+var tailHeight = bodyHeight/2;
+triangle(centerX+bodyLength/2, centerY,
+         centerX+bodyLength*1.25-tailWidth, centerY+tailHeight,
+         centerX+bodyLength*1.25-tailWidth, centerY-tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX-bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};     
+
+var drawFish3=function(){
+var centerX = random (10, 300);
+var centerY = random (10, 30);
+var bodyLength = random(20, 30);
+var bodyHeight = random(20, 30);
+var bodyColor = color(random (255,180), random( 251,190), random(50, 0));
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX+bodyLength/2, centerY,
+         centerX+bodyLength*1.25-tailWidth, centerY+tailHeight,
+         centerX+bodyLength*1.25-tailWidth, centerY-tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX-bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+
+};
+
+
+var drawFish4=function(){
+var centerX = random (10, 300);
+var centerY = random (10, 35);
+var bodyLength = random(20, 30);
+var bodyHeight = random(20, 30);
+var bodyColor = color(242, 170, 46);
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX+bodyLength/2, centerY,
+         centerX+bodyLength*1.25-tailWidth, centerY+tailHeight,
+         centerX+bodyLength*1.25-tailWidth, centerY-tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX-bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+
+};
